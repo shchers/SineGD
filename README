@@ -1,0 +1,10 @@
+Example of sine wave modeling and sine waves modulation with
+output results to PNG by GD library.
+
+Components will be required: gcc libgd2-xpm-dev libfftw3-dev
+  $ apt-get install gcc libgd2-xpm-dev libfftw3-dev
+
+Compiling and running this file (on cs) looks like this.
+  $ gcc testgd.c -std=gnu99 -lgd -lm -lfftw3 -Wall -o testgd
+  $ ./testgd
+  $ firefox testgd.png
